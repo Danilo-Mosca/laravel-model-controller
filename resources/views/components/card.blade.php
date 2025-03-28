@@ -5,8 +5,9 @@
         <p class="card-text">{{ $nationality }}</p>
         <p class="card-text text-uppercase">{{ $date }}</p>
     </div>
-    <div class="card-header bg-primary-subtle text-primary-emphasis d-flex align-items-center">
+    <div class="card-text p-3 bg-primary-subtle text-primary-emphasis d-flex align-items-center">
         <div class="me-2">
+            <!-- Ciclo che controlla il voto inserito e stampa a schermo le stelle piene, mezze o vuote in base ad esso -->
             @for ($i = 1; $i <= 10; $i++)
                 @if ($vote >= $i)
                     <i class="fas fa-star" style="color: #0D6EFD;"></i> <!-- Stella piena -->
