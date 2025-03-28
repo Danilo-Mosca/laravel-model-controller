@@ -6,3 +6,49 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+// CSS personalizzato
+
+/* variabili di root */
+:root {
+    --header-color: #0D6EFD;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classe di debug */
+.debug {
+    // border: 1px solid var(--prova1);
+    border: 1px solid red;
+}
+
+/* Classe fluida per le immagini */
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    height: 100vh;
+}
+
+/* --------------- CSS header --------------- */
+.container-fluid {
+    background-color: var(--header-color);
+
+    height: 100px;
+}
+
+.container-fluid a {
+    color: white;
+    font-size: 2.1em;
+}
+
+/* --------------- Fine CSS header --------------- */
